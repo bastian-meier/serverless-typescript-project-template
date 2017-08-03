@@ -1,5 +1,19 @@
 # serverless-typescript-project-template
 
+A template for a serverless aws project with typescript.
+
+## Install
+
+Of course you can just clone the repository:
+
+
+   ```bash
+   git clone git@github.com:bastian-meier/serverless-typescript-project-template.git
+   ``` 
+   
+But you could also use the [serverless-typescript-generator](https://github.com/bastian-meier/serverless-typescript-generator).
+
+
 ## Important files and Folders:
 
 * src/lambda
