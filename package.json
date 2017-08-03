@@ -1,0 +1,22 @@
+{
+  "name": "serverless-typescript-project-template",
+  "version": "1.0.0",
+  "description": "a template for a collection of lambda functions for aws",
+  "main": "index.js",
+  "scripts": {
+    "create": "bash ./sls-ts-gen",
+    "deploy": "bash ./deploy",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastian-meier/serverless-typescript-project-template"
+  },
+  "author": "Bastian Meier",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2"
+  }
+}

@@ -1,0 +1,18 @@
+#/bin/bash
+
+
+echo "Please define the Name of the Function:"
+read FOLDER
+echo "cloning template from https://github.com/bastian-meier/serverless-typescript-template to src/lambda/$FOLDER"
+git clone -q https://github.com/bastian-meier/serverless-typescript-template src/lambda/$FOLDER
+cd src/lambda/$FOLDER
+rm -rf .git
+echo "updating configuration ..."
+sed -e "s/serverless-typescript-template/${FOLDER}/g" serverless.yml > tmp.yml
+mv tmp.yml serverless.yml
+echo "installing dependencies ..."
+npm install
+echo " "
+echo " "
+echo " "
+echo "lambda function src/lambda/$FOLDER created, please read src/lambda/$FOLDER/REAMDE.md"
